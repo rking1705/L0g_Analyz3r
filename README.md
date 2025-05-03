@@ -7,7 +7,7 @@ Useful for detecting activity on a server.
 
 
 
-CODE:
+#CODE:
 from datetime import datetime
 import re
 import os
@@ -16,11 +16,10 @@ from pathlib import Path
 
 import pytz
 
-
-# log file
+#log file
 
 class LogAnalyzer:
-    # analyzes logs within a given folder
+    analyzes logs within a given folder
     def __init__(self, folder):
         self.folder = folder
         self.logs = []
